@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <h1>Fill in your information</h1>
+    <fieldset>
+        <legend>Form</legend>
+        <form method="get">
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname"><br><br>
+            <label for="LastName">Last name:</label><br>
+            <input type="text" id="LastName" name="LastName"><br><br>
+            <label for="Email">Email:</label><br>
+            <input type="email" id="Email" name="Email"><br><br>
+            <p style="font-size: large;"><b>Your Gender</b></p>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <p style="font-size: large;"><b>Favorite Subjects</b></p>
+            <input type="checkbox" id="c++" name="c++" value="c++">
+            <label for="c++">C++</label>
+            <input type="checkbox" id="Java" name="Java" value="Java">
+            <label for="Java">Java</label>
+            <input type="checkbox" id="c#" name="c#" value="c#">
+            <label for="c#">C#</label>
+            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+            <label for="PHP">PHP</label>
+            <input type="checkbox" id="SQL" name="SQL" value="SQL">
+            <label for="SQL">SQL</label>
+            <p style="font-size: large;"><b>Your City</b></p>
+            <label for="City">city</label>
+            <select name="City" id="City">
+                <option value="Amman">Amman</option>
+                <option value="Irbid">Irbid</option>
+                <option value="Zarqa">Zarqa</option>
+                <option value="Aqaba">Aqaba</option>
+            </select><br><br>
+            <span>Upload Image</span>
+            <input type="file" id="myFile" name="filename"><br><br>
+            <label for="about_yourself">Write about yourself:</label><br>
+            <textarea id="about_yourself" name="about_yourself" rows="4" cols="50" maxlength="10000"></textarea><br>
+            <input type="submit">
+        </form>
+            </fieldset><br><br><br>
+        <form method="get">
+            <table>
+            <tr>
+                <td>
+                    <label for="Name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="Name" name="Name"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Address">Address:</label>
+                </td>
+                <td>
+                    <input type="text" id="Address" name="Address"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="City">City:</label>
+                </td>
+                <td>
+                    <input type="text" id="City" name="City"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="State">State:</label>
+                </td>
+                <td>
+                    <input type="text" id="State" name="State"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Zip">Zip:</label>
+                </td>
+                <td>
+                    <input type="text" id="Zip" name="Zip">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Magazine">Magazine</label>
+                </td>
+                <td>
+                    <select name="Magazine" id="Magazine">
+                        <option value="Newsweek">Newsweek</option>
+                        <option value="Newsweek2">Newsweek2</option>
+                        <option value="Newsweek3">Newsweek3</option>
+                    </select>
+                </td>
+            </tr>
+            </table><br>
+            <span>Subscription:</span>
+            <input type="radio" id="time" name="year" value="1year">
+            <label for="1year">1 year</label>
+            <input type="radio" id="time" name="year" value="2year">
+            <label for="2year">2 year</label><br><br>
+            <input type="submit" value="Send Your Order">
+        </form>
+</body>
+</html>

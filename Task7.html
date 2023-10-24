@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 7</title>
+    <style>
+        .table1-top-left-right
+        {
+            border-top: 1px dashed black;
+            border-left: 1px dashed black;
+            border-right: 1px dashed black;
+            text-align: center;
+            width:auto; 
+
+        }
+        .table-top-right
+        {
+            border-top: 1px dashed black;
+            border-right: 1px dashed black;
+            text-align: center;
+            width:auto; 
+
+        }
+        .table2
+        {
+            border: 3px solid black;  
+            text-align: center;
+            width:auto; 
+        }
+        .table3
+        {
+            border: 3px solid black;  
+            text-align: center;
+            width:auto; 
+            font-weight: bold;
+        }
+        .table4
+        {
+            border: 3px solid black;  
+            text-align: center;
+            width:auto; 
+            font-weight: bold;
+        }
+        .table5
+        {
+            border: 3px solid black;  
+            text-align: center;
+            width:auto; 
+        }
+        .table6
+        {
+            border: 3px solid black;  
+            text-align: center;
+            width:auto; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Images in Tables</h2>
+    <hr>
+    <h3>What are your favorite pets ?</h3>
+    <table>
+        <tr>
+            <th  class="table1-top-left-right">Pet Image</th>
+            <th  class="table-top-right">More Facts about(as a Link)</th>
+        </tr>
+        <tr>
+            <td  class="table1-top-left-right"><img src="fox.jpg" title="fox" alt="fox" width="20%" height="20%"></td>
+            <td  class="table-top-right"><a href="https://www.wildthingsfood.co.uk/news/10-facts-about-foxes-that-may-surprise-you/" target="_blank">Fox</a></td>
+        </tr>
+        <tr>
+            <td  class="table1-top-left-right"><img src="cat.jpg" title="Cat" alt="Cat" width="20%" height="20%"></td>
+            <td  class="table-top-right"><a href="https://cvillecatcare.com/veterinary-topics/101-amazing-cat-facts-fun-trivia-about-your-feline-friend/"
+                    target="_blank">Cat</a></td>
+        </tr>
+        <tr>
+            <td  class="table1-top-left-right" style="border-bottom: 1px dashed black;"><img src="dog.jfif" title="Dog" alt="Dog" width="20%" height="20%"></td>
+            <td  class="table-top-right" style="border-bottom: 1px dashed black;"><a href="https://www.akc.org/expert-advice/lifestyle/dog-facts/"
+                    target="_blank">Dog</a></td>
+        </tr>
+    </table><br><br>
+    <table class="table2">
+        <tr>
+            <td class="table2" colspan="6">Time Table</td>
+        </tr>
+        <tr>
+            <td class="table2" rowspan="6">Hours</td>
+            <td class="table2">Mon</td>
+            <td class="table2">Tue</td>
+            <td class="table2">Wed</td>
+            <td class="table2">Thu</td>
+            <td class="table2">Fri</td>
+        </tr>
+        <tr>
+            <td class="table2">Math</td>
+            <td class="table2">Science</td>
+            <td class="table2">Math</td>
+            <td class="table2">Science</td>
+            <td class="table2">Arts</td>
+        </tr>
+        <tr>
+            <td class="table2">Math</td>
+            <td class="table2">Science</td>
+            <td class="table2">Math</td>
+            <td class="table2">Science</td>
+            <td class="table2">Arts</td>
+        </tr>
+        <tr>
+            <td class="table2" colspan="5">Lunch</td>
+        </tr>
+        <tr>
+            <td class="table2">Math</td>
+            <td class="table2">Science</td>
+            <td class="table2">Math</td>
+            <td class="table2" colspan="2" rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td class="table2">Math</td>
+            <td class="table2">Science</td>
+            <td class="table2">Math</td>
+        </tr>
+    </table><br><br>
+    <table class="table3">
+        <tr>
+            <td class="table3" colspan="2">Language and Framworks</td>
+        </tr>
+        <tr>
+            <td class="table3">Python</td>
+            <td class="table3">Django</td>
+        </tr>
+        <tr>
+            <td class="table3" rowspan="2">Javascript</td>
+            <td class="table3">React.js</td>
+        </tr>
+        <tr>
+            <td class="table3">Vue.js</td>
+        </tr>
+        <tr>
+            <td class="table3">Ruby</td>
+            <td class="table3">ruby on Rails</td>
+        </tr>
+    </table><br><br>
+    <h3>Table Num. 2</h3>
+    <table class="table4">
+        <tr>
+            <td rowspan="2" class="table4">Row1-2,col1</td>
+            <td class="table4">Row1,col2</td>
+            <td class="table4">Row1,col3</td>
+            <td class="table4">Row1,col4</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2" class="table4">Row2-3,col2-3</td>
+            <td class="table4">Row2,col4</td>
+        </tr>
+        <tr>
+            <td class="table4">Row3,col1</td>
+            <td class="table4">Row3,col4</td>
+        </tr>
+        <tr>
+            <td class="table4">Row4,col1</td>
+            <td class="table4">Row4,col2</td>
+            <td colspan="2" class="table4">Row4,col3-4</td>
+        </tr>
+    </table><br><br>
+    <h3>TABLE USING COLSPAN,ROWSPAN</h3>
+    <table class="table5">
+        <tr>
+            <td rowspan="9" class="table5">A</td>
+            <td rowspan="8" class="table5">B</td>
+            <td rowspan="7" class="table5">C</td>
+            <td rowspan="6" class="table5">D</td>
+            <td rowspan="5" class="table5">E</td>
+            <td rowspan="4" class="table5">F</td>
+            <td class="table5">AH</td>
+            <td rowspan="4" class="table5">H</td>
+            <td rowspan="5" class="table5">I</td>
+            <td rowspan="6" class="table5">J</td>
+            <td rowspan="7" class="table5">K</td>
+            <td rowspan="8" class="table5">L</td>
+            <td rowspan="10" class="table5">M</td>
+        </tr>
+        <tr>
+            <td class="table5">G</td>
+        </tr>
+        <tr>
+            <td class="table5">GH</td>
+        </tr>
+        <tr>
+            <td class="table5">N</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="table5">O</td>
+        </tr>
+        <tr>
+            <td colspan="5" class="table5">P</td>
+        </tr>
+        <tr>
+            <td colspan="7" class="table5">Q</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="table5">R</td>
+            <td class="table5">S</td>
+            <td class="table5">T</td>
+            <td class="table5">U</td>
+            <td class="table5">V</td>
+            <td class="table5">W</td>
+            <td colspan="2" class="table5">X</td>
+        </tr>
+        <tr>
+            <td colspan="11" class="table5">Y</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="table5">Z</td>
+            <td class="table5">1</td>
+            <td class="table5">2</td>
+            <td class="table5">3</td>
+            <td class="table5">4</td>
+            <td class="table5">5</td>
+            <td class="table5">6</td>
+            <td class="table5">7</td>
+            <td class="table5">8</td>
+            <td class="table5">9</td>
+            <td class="table5">10</td>
+
+        </tr>
+    </table><br><br>
+    <h3>TIME TABLE</h3>
+    <table class="table6">
+        <tr>
+            <th class="table6">Day/Period</th>
+            <th class="table6">I<br>9:30-10:20</th>
+            <th class="table6">II<br>10:20-11:10</th>
+            <th class="table6">III<br>11:10-12:00</th>
+            <th class="table6">12:00-12:40</th>
+            <th class="table6">IV<br>12:40-1:30</th>
+            <th class="table6">V<br>1:30-2:20</th>
+            <th class="table6">VI<br>2:20-3:10</th>
+            <th class="table6">VII<br>3:10-4:00</th>
+        </tr>
+        <tr>
+            <td class="table6">Monday</td>
+            <td class="table6">End</td>
+            <td class="table6">Mat</td>
+            <td class="table6">Che</td>
+            <td rowspan="6"class="table6"><b>L<br>U<br>N<br>C<br>H</b></td>
+            <td colspan="3" class="table6">LAB</td>
+            <td class="table6">Phy</td>
+        </tr>
+        <tr>
+            <td class="table6">Tusday</td>
+            <td colspan="3" class="table6">LAB</td>
+            <td class="table6">Eng</td>
+            <td class="table6">Che</td>
+            <td class="table6">Mat</td>
+            <td class="table6">Sports</td>
+        </tr>
+        <tr>
+            <td class="table6">Wednesday</td>
+            <td class="table6">Mat</td>
+            <td class="table6">Phy</td>
+            <td class="table6">Eng</td>
+            <td class="table6">Che</td>
+            <td colspan="3" class="table6">LIBRARY</td>
+
+        </tr>
+        <tr>
+            <td class="table6">Thursday</td>
+            <td class="table6">Phy</td>
+            <td class="table6">Eng</td>
+            <td class="table6">Che</td>
+            <td colspan="3" class="table6">LAB</td>
+            <td class="table6">Phy</td>
+        </tr>
+        <tr>
+            <td class="table6">Friday</td>
+            <td colspan="3" class="table6">LAB</td>
+            <td class="table6">Mat</td>
+            <td class="table6">Che</td>
+            <td class="table6">Eng</td>
+            <td class="table6">Phy</td>
+        </tr>
+        <tr>
+            <td class="table6">Saturdat</td>
+            <td class="table6">Eng</td>
+            <td class="table6">Che</td>
+            <td class="table6">Mat</td>
+            <td colspan="3" class="table6">SEMINAR</td>
+            <td class="table6">SPORTS</td>
+        </tr>
+    </table>
+</body>
+</html>
